@@ -1,0 +1,22 @@
+body {
+    color: #8da05b;
+    background-color: #ffffff;
+    font-family: 'Droid Sans';
+}
+
+h1 {
+    color: #38373a;
+    font-family: 'Pacifico';
+}
+
+.accent-primary {
+    background-color: #e7f1ae;
+}
+
+.accent-secondary {
+    color: #cf6626;
+}
+
+.logo {
+    background-color: #e8b85b;
+}
