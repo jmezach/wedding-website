@@ -17,6 +17,50 @@ h1 {
     color: #cf6626;
 }
 
+/* Header */
+
+#header {
+    width: 1024px !important;
+    height: 200px !important;
+    margin:auto;
+}
+
 .logo {
     background-color: #e8b85b;
+    width: 140px;
+    margin-left: 80px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.logo .subtext {
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 45px;
+    padding: 0;
+    float: right;
+}
+
+.navbar ul li {
+    display: inline;
+    color: #38373a;
+    margin: 15px;
+}
+
+/* Content */
+
+#content {
+    width:1024px !important;
+    height:768px !important;
+    border:1px solid red;
+    margin:auto;
 }
