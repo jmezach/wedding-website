@@ -1,16 +1,21 @@
 <div id="header">
-    <div class="logo">
-        <h1>Bruiloft</h1>
-        <div class="subtext">
-            Tonke<br/>
-            &amp;</br>
-            Jonathan
+    <a href="/">
+        <div class="logo">
+            <h1>Bruiloft</h1>
+            <div class="subtext">
+                Tonke<br/>
+                &amp;</br>
+                Jonathan
+            </div>
         </div>
-    </div>
+    </a>
     <nav class="navbar">
         <ul>
-            {{ range .Pages.ByWeight }}
-                <li>{{ .Title }}</li>
+            {{ $current := . }}
+            {{ range after 1 .Site.Menus.nav }}
+                {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+                {{ $active = or $active (eq .Name $current.Title) }}
+                <li class="{{ if $active }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </nav>
