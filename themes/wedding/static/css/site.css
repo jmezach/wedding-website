@@ -23,7 +23,7 @@ h1 {
 #header {
     height: 122px !important;
     margin: auto;
-    border-bottom: 1px solid #8da05b
+    border-bottom: 1px solid #e7f1ae;
 }
 
 .logo {
@@ -69,7 +69,7 @@ h1 {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-bottom-color: #8da05b;
+    border-bottom-color: #e7f1ae;;
     top: 100%;
     left: calc(50% - 10px);
     margin-top: 32px;
