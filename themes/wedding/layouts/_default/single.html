@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ if isset .Params "banner" }}
+    {{- partial "banner-image.html" . -}}
+{{- end }}
 <section id="main">
     <h1 id="title">{{ .Title }}</h1>
     <div>
