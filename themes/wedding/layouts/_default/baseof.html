@@ -3,6 +3,9 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+        {{ if isset .Params "banner" }}
+            {{- partial "banner-image.html" . -}}
+        {{- end }}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
