@@ -78,6 +78,19 @@ div#header {
     margin-top: 32px;
 }
 
+.navbar ul li:hover:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #e7f1ae;;
+    top: 100%;
+    left: calc(50% - 10px);
+    margin-top: 32px;
+}
+
 .navbar ul li a {
     color: #38373a;
     text-decoration: none;
