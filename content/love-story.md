@@ -5,6 +5,4 @@ publishdate: 2017-03-24
 weight: 1
 ---
 
-# Love Story
-
 Hello World!

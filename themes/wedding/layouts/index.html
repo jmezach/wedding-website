@@ -3,7 +3,7 @@
         {{- partial "banner-image.html" . -}}
     {{- end }}
     <section id="main">
-        <h1 id="title">{{ .Title }}</h1>
+        {{- partial "header-text.html" . -}}
         <div>
             <article id="content">
                 {{ .Content }}

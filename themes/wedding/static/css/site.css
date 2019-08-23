@@ -109,4 +109,36 @@ img.banner {
 section#main {
     width:1024px !important;
     margin: auto;
+    text-align: center;
+}
+
+h1#title {
+    font-size: 2em;
+    margin: -20px;
+}
+
+h1#title:before {
+    margin-right: 50px;
+    content: " ";
+    transform: rotate(85deg);
+    width: 60px;
+    height: 150px;
+    display: inline-block;
+    background-image: url('/img/takje.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+h1#title:after {
+    margin-left: 50px;
+    content: " ";
+    transform: rotate(260deg);
+    width: 60px;
+    height: 150px;
+    display: inline-block;
+    background-image: url('/img/takje.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
 }
