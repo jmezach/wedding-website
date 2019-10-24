@@ -1,5 +1,5 @@
 ---
-title: Bruiloft Tonke & Jonathan
+title: Welkom lieve gasten
 banner: /img/home.jpg
 ---
 
