@@ -26,7 +26,7 @@ stages:
         displayName: Preview site (include drafts & future published content)
         # always build on pushes to any branch; never on scheduled builds
         condition: and(succeeded(), ne(variables['Build.Reason'], 'Schedule'))
-        hugo_version: 0.60.0
+        hugo_version: 0.60.1
         hugo_config_baseUrl: $(PreviewSiteBaseUrl)
         hugo_config_flags: '--buildFuture --buildExpired'
         site_storage_account: $(PreviewSiteAccount)
@@ -39,7 +39,7 @@ stages:
         displayName: Live site (exclude drafts & future published content)
         # always build on pushes to master
         condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
-        hugo_version: 0.60.0
+        hugo_version: 0.60.1
         hugo_config_baseUrl: $(LiveSiteBaseUrl)
         hugo_config_flags: '--minify'
         site_storage_account: $(LiveSiteAccount)
