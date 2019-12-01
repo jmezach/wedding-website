@@ -1,0 +1,68 @@
+# Azure DevOps build pipeline
+# 
+# Triggered on all push to master. Creates two builds & deployes both
+# Build 1 - Preview: builds the site including all draft
+# Build 2 - Live: builds the live site
+#
+
+# build on all pushes
+trigger:
+  branches:
+    include:
+      - '*'
+
+# necessary variables
+variables:
+  - group: Wedding Website
+
+# stages
+stages:
+- stage: Build_Codebase
+  jobs:
+    # JOB: Build preview site
+    - template: build/site-build-job.yml
+      parameters:
+        name: build_preview_site
+        displayName: Preview site (include drafts & future published content)
+        # always build on pushes to any branch; never on scheduled builds
+        condition: and(succeeded(), ne(variables['Build.Reason'], 'Schedule'))
+        hugo_version: 0.60.0
+        hugo_config_baseUrl: $(PreviewSiteBaseUrl)
+        hugo_config_flags: '--buildFuture --buildExpired'
+        site_storage_account: $(PreviewSiteAccount)
+        site_storage_key: $(PreviewSiteAccessKey)
+        build_tag: preview-site
+    # JOB: Build live site
+    - template: build/site-build-job.yml
+      parameters:
+        name: build_live_site
+        displayName: Live site (exclude drafts & future published content)
+        # always build on pushes to master
+        condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+        hugo_version: 0.60.0
+        hugo_config_baseUrl: $(LiveSiteBaseUrl)
+        hugo_config_flags: '--minify'
+        site_storage_account: $(LiveSiteAccount)
+        site_storage_key: $(LiveSiteAccessKey)
+        build_tag: live-site
+- stage: Deploy_Codebase
+  dependsOn: Build_Codebase
+  jobs:
+    # JOB: Deploy preview site
+    - template: build/site-deploy-job.yml
+      parameters:
+        name: deploy_preview_site
+        displayName: Preview site (include drafts & future published content)
+        condition: and(succeeded(), ne(variables['Build.Reason'], 'Schedule'))
+        site_storage_account: $(PreviewSiteAccount)
+        site_storage_key: $(PreviewSiteAccessKey)
+        build_tag: preview-site
+    # JOB: Deploy live site
+    - template: build/site-deploy-job.yml
+      parameters:
+        name: deploy_live_site
+        displayName: Live site (exclude drafts & future published content)
+        condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+        site_storage_account: $(LiveSiteAccount)
+        site_storage_key: $(LiveSiteAccessKey)
+        build_tag: live-site
