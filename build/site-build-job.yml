@@ -37,6 +37,8 @@ jobs:
     vmImage: ubuntu-latest
   condition: ${{ parameters.condition }}
   steps:
+    - checkout: self
+      lfs: true
     # 1. Downloads specified version of Hugo executable
     - script: wget https://github.com/gohugoio/hugo/releases/download/v${{ parameters.hugo_version }}/hugo_${{ parameters.hugo_version }}_Linux-64bit.deb 
         -O '$(Pipeline.Workspace)/hugo_${{ parameters.hugo_version }}_Linux-64bit.deb'
