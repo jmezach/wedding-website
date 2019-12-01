@@ -59,7 +59,7 @@ jobs:
       displayName: Copy Hugo built site files to staging folder "deploy"
       inputs:
         Contents: |
-          config.yml
+          config.toml
           public/**
           resources/**
           static/**
