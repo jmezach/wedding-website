@@ -2,6 +2,7 @@ body {
     color: #8da05b;
     background-color: #ffffff;
     font-family: 'Droid Sans';
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -31,10 +32,10 @@ div#header {
 
 .logo {
     background-color: #e8b85b;
-    width: 140px;
+    width: 250px;
     margin-left: 80px;
-    padding-bottom: 10px;
     float: left;
+    padding-bottom: 9px;
 }
 
 .logo h1 {
@@ -75,7 +76,7 @@ div#header {
     border-bottom-color: #e7f1ae;;
     top: 100%;
     left: calc(50% - 10px);
-    margin-top: 32px;
+    margin-top: 22px;
 }
 
 .navbar ul li:hover:after {
@@ -88,7 +89,7 @@ div#header {
     border-bottom-color: #e7f1ae;;
     top: 100%;
     left: calc(50% - 10px);
-    margin-top: 32px;
+    margin-top: 22px;
 }
 
 .navbar ul li a {
