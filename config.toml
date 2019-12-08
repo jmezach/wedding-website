@@ -24,3 +24,9 @@ theme = "wedding"
         name = "Aanmelden"
         url = "/aanmelden/"
         weight = 5
+
+[deployment]
+order = [".jpg$", ".gif$"]
+    [[deployment.targets]]
+        name = "Azure"
+        url = "azblob://$web"

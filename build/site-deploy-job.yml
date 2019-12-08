@@ -1,0 +1,53 @@
+# Azure DevOps Build Pipeline
+#
+# This job template is used in the deploy stage. It does the following:
+# 1. Downloads Hugo executable from published artifacts
+# 2. Downloads built site codebase from published artifacts
+# 3. Installs Hugo executable
+# 4. Extracts the zip'd site codebase
+# 5. Executes Hugo `deploy` command to publish all files to Azure Storage blob
+
+parameters:
+  # unique name of the job
+  name: ''
+  # friendly name of the job
+  displayName: ''
+  # condition when the job should run
+  condition: {}
+  # Azure Storage Account name & access key where site is deployed
+  site_storage_account: ''
+  site_storage_key: ''
+  # Unique tag for site type
+  build_tag: ''
+
+jobs:
+- job: ${{ parameters.name }}
+  displayName: ${{ parameters.displayName }}
+  pool:
+    vmImage: ubuntu-latest
+  condition: ${{ parameters.condition }}
+  steps:
+  # 1. Downloads Hugo executable from published artifacts
+  - download: current
+    artifact: hugo-installer
+  # 2. Downloads built site codebase from published artifacts
+  - download: current
+    artifact: build-${{ parameters.build_tag }}
+  # 3. Installs Hugo executable
+  - script: 'sudo dpkg -i hugo*.deb'
+    workingDirectory: '$(Pipeline.Workspace)/hugo-installer'
+    displayName: 'Install Hugo'
+  # 4. Extracts the zip'd site codebase
+  - task: ExtractFiles@1
+    displayName: 'Extract files '
+    inputs:
+      archiveFilePatterns: '$(Pipeline.Workspace)/build-${{ parameters.build_tag }}/hugo-build.zip'
+      destinationFolder: '$(Pipeline.Workspace)/build-${{ parameters.build_tag }}/deploy'
+      cleanDestinationFolder: false
+  # 5. Executes Hugo `deploy` command to publish all files to Azure Storage blob
+  - script: 'hugo deploy --maxDeletes -1'
+    workingDirectory: '$(Pipeline.Workspace)/build-${{ parameters.build_tag }}/deploy'
+    displayName: 'Deploy build to site'
+    env:
+      AZURE_STORAGE_ACCOUNT: ${{ parameters.site_storage_account }}
+      AZURE_STORAGE_KEY: ${{ parameters.site_storage_key }}
