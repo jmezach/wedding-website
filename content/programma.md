@@ -10,6 +10,8 @@ weight: 2
 <!-- [Google](www.google.nl) -->
 
 {{< figure src="/media/spf13.jpg" title="Steve Francia">}}
+
+<!-- TONKE plaatjes zoeken en in map zetten -->
  
 13:30 ontvangst
 
