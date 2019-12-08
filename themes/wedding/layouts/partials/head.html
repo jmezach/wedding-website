@@ -1,4 +1,7 @@
 <title>{{.Site.Title}}</title>
-<link rel="stylesheet" href="/css/site.css" />
+
+{{ $styles := resources.Get "css/site.css" | resources.Minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
