@@ -104,6 +104,10 @@ div#content {
     line-height: 30pt;
 }
 
+a {
+    color: #cf6626;
+}
+
 img.banner {
     width: 100%;
 }
