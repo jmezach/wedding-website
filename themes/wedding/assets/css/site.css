@@ -104,6 +104,10 @@ div#content {
     line-height: 30pt;
 }
 
+a {
+    color: #cf6626;
+}
+
 img.banner {
     width: 100%;
 }
@@ -147,6 +151,16 @@ h1#title:after {
     vertical-align: middle;
     position: relative;
     z-index: -1;
+}
+
+/* Program */
+div.program-item p {
+    margin: 0;
+    color: #cf6626;
+}
+
+div.program-item img {
+    filter: invert(46%) sepia(78%) saturate(649%) hue-rotate(343deg) brightness(86%) contrast(86%);
 }
 
 /* Footer */
