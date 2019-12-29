@@ -154,6 +154,14 @@ h1#title:after {
 }
 
 /* Program */
+.program-row {
+    display: flex;
+}
+  
+.program-column {
+    flex: 50%;
+}
+
 div.program-item {
     margin-bottom: 20px;
 }
