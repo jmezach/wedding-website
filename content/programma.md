@@ -31,6 +31,7 @@ Hier vind je het avondprogramma. Ben je een avondgast? Dan is alleen het avondpr
 
 {{< program-item icon="welcome" text="20:00 uur Ontvangst avondgasten">}}
 <br>
-{{< program-item icon="dance" text="20:30 uur Let's dance!">}}
+{{< program-item icon="dance" text="20:30 uur Feest!">}}
 <br>
 {{< program-item icon="bye" text="00:00 uur Slaap lekker!">}}
+<br>
