@@ -14,17 +14,11 @@ Hier vind je het dagprogramma. Ben je een daggast? Dan is het dagprogramma samen
 <!-- TONKE plaatjes zoeken en in map zetten -->
 
 {{< program-item icon="welcome" text="13:30 uur Ontvangst">}}
-<br>
 {{< program-item icon="ceremonie" text="14:00 uur Ceremonie">}}
-<br>
 {{< program-item icon="champagne" text="14:45 uur Toast">}}
-<br>
 {{< program-item icon="camera" text="15:15 uur foto's">}}
-<br>
 {{< program-item icon="zoo" text="15:45 uur Dierentuin">}}
-<br>
 {{< program-item icon="diner" text="17:00 uur Diner">}}
-<br>
 
 
 
