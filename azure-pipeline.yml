@@ -28,7 +28,7 @@ stages:
         condition: and(succeeded(), ne(variables['Build.Reason'], 'Schedule'))
         hugo_version: 0.60.1
         hugo_config_baseUrl: $(PreviewSiteBaseUrl)
-        hugo_config_flags: '--buildFuture --buildExpired'
+        hugo_config_flags: '--buildFuture --buildExpired --buildDrafts'
         site_storage_account: $(PreviewSiteAccount)
         site_storage_key: $(PreviewSiteAccessKey)
         build_tag: preview-site
