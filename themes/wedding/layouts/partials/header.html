@@ -12,10 +12,10 @@
     <nav class="navbar">
         <ul>
             {{ $current := . }}
-            {{ range after 1 .Site.Menus.nav }}
-                {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+            {{ range .Site.Menus.main }}
+                {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
                 {{ $active = or $active (eq .Name $current.Title) }}
-                <li class="{{ if $active }}active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li class="{{ if $active }}active{{ end }}"><a href="{{ .URL }}">{{- .Name -}}</a></li>
             {{ end }}
         </ul>
     </nav>

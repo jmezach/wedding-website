@@ -3,32 +3,6 @@ languageCode = "nl-nl"
 title = "Bruiloft Tonke & Jonathan"
 theme = "wedding"
 
-[menu]
-    [[menu.nav]]
-        name = "Home"
-        url = "/"
-        weight = 1
-    [[menu.nav]]
-        name = "Love Story"
-        url = "/love-story/"
-        weight = 2
-    [[menu.nav]]
-        name = "Programma"
-        url = "/programma/"
-        weight = 3
-    [[menu.nav]]
-        name = "Slapen"
-        url = "/slapen/"
-        weight = 4
-    [[menu.nav]]
-        name = "Cadeautip"
-        url = "/cadeautip/"
-        weight = 5
-    [[menu.nav]]
-        name = "Aanmelden"
-        url = "/aanmelden/"
-        weight = 6
-
 [deployment]
 order = [".jpg$", ".gif$"]
     [[deployment.targets]]

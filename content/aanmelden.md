@@ -2,7 +2,10 @@
 title: Aanmelden
 date: 2017-03-23
 publishdate: 2017-03-24
-weight: 4
+draft: true
+menu:
+  main:
+    weight: 5
 ---
 
 <!-- 
