@@ -9,9 +9,7 @@ menu:
 ---
 
 ## Dagprogramma
-Hier vind je het dagprogramma. Ben je een daggast? Dan is het dagprogramma samen met het avondprogramma voor jou van toepassing. Geen daggast? Scroll door naar het avondprogramma. 
-<!-- [Google](www.google.nl) -->
-<!-- TONKE plaatjes zoeken en in map zetten -->
+Hier vind je het dagprogramma. Ben je een daggast? Dan is het dagprogramma samen met het avondprogramma voor jou van toepassing. Geen daggast? Scroll door naar het [avondprogramma](#avondprogramma).
 
 {{< program >}}
   {{< program-column >}}

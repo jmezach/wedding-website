@@ -18,5 +18,4 @@ Totdat Jonathan een meisje spotte. Later bleek dat zijn collega van de Hooiberg 
 Ondertussen besloot het meisje, Tonke, dat het tijd was om naar huis te gaan. Ze stond in de rij om haar jas op te halen bij de garderobe. Er kwam een jongen naast haar staan. Hij vroeg : "Kom je hier vaker?". Ondanks de (slechte) openingszin raakten ze toch in gesprek. En zo hebben Jonathan en Tonke elkaar ontmoet. 
 
 
-
 ![hartje](/img/oranje_hartje.png)
