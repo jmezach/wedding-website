@@ -5,7 +5,7 @@ publishdate: 2017-03-24
 draft: true
 menu:
   main:
-    weight: 2
+    weight: 3
 ---
 
 ## Dagprogramma
