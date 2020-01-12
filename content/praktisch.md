@@ -7,6 +7,10 @@ menu:
     weight: 2
 ---
 
+## Ceremoniemeester
+
+Mochten jullie vragen hebben over onze bruiloft, dan kunnen jullie je ook richten tot onze ceremoniemeester: [Maaike Graafland](https://www.blauwebloesem.nl). Vragen kunnen jullie mailen naar [contact@blauwebloesem.nl](mailto:contact@blauwebloesem.nl).
+
 ## Slapen
 
 Slapen doen wij niet in ons eigen bedje maar in het Stay Okay Hotel in Arnhem. Wij willen jullie van harte uitnodigen om hetzelfde te doen. Het is mogelijk om te blijven slapen vanaf &euro; 20,50. Zo, kunnen we samen genieten van een (kater)ontbijt.
