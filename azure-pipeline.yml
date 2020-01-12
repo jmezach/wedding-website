@@ -71,6 +71,8 @@ stages:
     # JOB: Purge CDN for live site
     - job: purgeJob
       displayName: Purge CDN for Live Site
+      dependsOn:
+        deploy_live_site
       pool:
         vmImage: ubuntu-latest
       steps:
