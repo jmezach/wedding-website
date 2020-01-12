@@ -83,7 +83,5 @@ stages:
           scriptType: pscore
           scriptLocation: inlineScript
           inlineScript: |
-            az version
-            az account show
-            az cdn endpoint purge -g wedding-website -n wedding-mezach-net --profile-name live-wedding-website --content-paths /*
+            az cdn endpoint purge -g wedding-website -n wedding-mezach-net --profile-name live-wedding-website --content-paths "/*"
       condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
