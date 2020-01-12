@@ -2,28 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "nl-nl"
 title = "Bruiloft Tonke & Jonathan"
 theme = "wedding"
-
-[menu]
-    [[menu.nav]]
-        name = "Home"
-        url = "/"
-        weight = 1
-    [[menu.nav]]
-        name = "Love Story"
-        url = "/love-story/"
-        weight = 2
-    [[menu.nav]]
-        name = "Programma"
-        url = "/programma/"
-        weight = 3
-    [[menu.nav]]
-        name = "Cadeautip"
-        url = "/cadeautip/"
-        weight = 4
-    [[menu.nav]]
-        name = "Aanmelden"
-        url = "/aanmelden/"
-        weight = 5
+googleAnalytics = "UA-156089991-1"
 
 [deployment]
 order = [".jpg$", ".gif$"]

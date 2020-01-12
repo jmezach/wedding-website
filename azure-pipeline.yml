@@ -28,10 +28,11 @@ stages:
         condition: and(succeeded(), ne(variables['Build.Reason'], 'Schedule'))
         hugo_version: 0.60.1
         hugo_config_baseUrl: $(PreviewSiteBaseUrl)
-        hugo_config_flags: '--buildFuture --buildExpired'
+        hugo_config_flags: '--buildFuture --buildExpired --buildDrafts'
         site_storage_account: $(PreviewSiteAccount)
         site_storage_key: $(PreviewSiteAccessKey)
         build_tag: preview-site
+        google_maps_apikey: $(GoogleMapsAPIKey)
     # JOB: Build live site
     - template: build/site-build-job.yml
       parameters:
@@ -45,6 +46,7 @@ stages:
         site_storage_account: $(LiveSiteAccount)
         site_storage_key: $(LiveSiteAccessKey)
         build_tag: live-site
+        google_maps_apikey: $(GoogleMapsAPIKey)
 - stage: Deploy_Codebase
   dependsOn: Build_Codebase
   jobs:

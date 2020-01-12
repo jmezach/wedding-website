@@ -29,6 +29,8 @@ parameters:
   site_storage_key: ''
   # Unique tag for site type
   build_tag: ''
+  # API key used to access Google Maps
+  google_maps_apikey: ''
 
 jobs:
 - job: ${{ parameters.name }}
@@ -49,6 +51,8 @@ jobs:
     # 3. Executes Hugo to build site with specified arguments
     - script: hugo --baseUrl '${{ parameters.hugo_config_baseUrl }}' ${{ parameters.hugo_config_flags }}
       displayName: Build site with Hugo (include future & expired content)
+      env:
+        HUGO_PARAMS.googleMapsApiKey: ${{ parameters.google_maps_apikey }}
     # 4. Executes Hugo `deploy` command to log all files that would be 
     #    added/updated/deleted to the Azure site
     - script: hugo deploy --maxDeletes -1 --dryRun
