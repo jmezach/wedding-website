@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "nl-nl"
 title = "Bruiloft Tonke & Jonathan"
 theme = "wedding"
+googleAnalytics = "UA-156089991-1"
 
 [deployment]
 order = [".jpg$", ".gif$"]
