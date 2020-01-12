@@ -2,7 +2,7 @@
 title: Love Story
 date: 2017-03-23
 publishdate: 2017-03-24
-banner: /img/love-story.jpg
+banner: /img/lovestory_bijgesneden.jpg
 menu:
   main:
     weight: 1
@@ -18,4 +18,6 @@ Tot het moment dat Jonathan een meisje spotte waar hij zijn ogen niet vanaf kon 
 Ondertussen besloot het meisje, Tonke, dat het tijd was om naar huis te gaan. Ze stond in de rij om haar jas op te halen bij de garderobe. Er kwam een jongen naast haar staan. Hij vroeg : "Kom je hier vaker?". Ondanks de slechte openingszin raakten ze toch in gesprek. En zo hebben Jonathan en Tonke elkaar ontmoet. 
 
 
-![hartje](/img/oranje_hartje.png)
+
+
+{{< figure src="/img/hartje.png" width="100">}}
