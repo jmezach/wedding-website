@@ -3,9 +3,6 @@ languageCode = "nl-nl"
 title = "Bruiloft Tonke & Jonathan"
 theme = "wedding"
 
-[params]
-    googleMapsApiKey = "$googleMapsApiKey$"
-
 [deployment]
 order = [".jpg$", ".gif$"]
     [[deployment.targets]]
