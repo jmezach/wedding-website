@@ -68,3 +68,20 @@ stages:
         site_storage_account: $(LiveSiteAccount)
         site_storage_key: $(LiveSiteAccessKey)
         build_tag: live-site
+    # JOB: Purge CDN for live site
+    - job: purgeJob
+      displayName: Purge CDN for Live Site
+      pool:
+        vmImage: ubuntu-latest
+      steps:
+      - task: AzureCLI@2
+        displayName: az cdn endpoint purge
+        inputs:
+          azureSubscription: WeddingWebsite
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            az version
+            az account show
+            az cdn endpoint purge -g wedding-website -n wedding-mezach-net --profile-name live-wedding-website --content-paths /*
+      condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
