@@ -19,11 +19,14 @@ Antoon van Hooffplein 1
 
 Mochten jullie vragen hebben over onze bruiloft, dan kunnen jullie je ook richten tot onze ceremoniemeester: [Maaike Graafland](https://www.blauwebloesem.nl). Vragen kunnen jullie mailen naar [contact@blauwebloesem.nl](mailto:contact@blauwebloesem.nl) onder vermelding van "Bruiloft Tonke en Jonathan".
 
+## Kinderen
+Zijn jullie als daggasten uitgenodigd? Dan zijn jullie kinderen natuurlijk ook van harte welkom. In de middag is er gelegenheid om het dierenpark te bezoeken maar in de avond is het dierenpark gesloten. 
+
 ## Slapen
 
 Slapen doen wij niet in ons eigen bedje maar in het Stay Okay Hotel in Arnhem. Wij willen jullie van harte uitnodigen om hetzelfde te doen. Het is mogelijk om te blijven slapen vanaf &euro; 20,50. Zo, kunnen we samen genieten van een (kater)ontbijt.
 
-Er zijn slaapzalen van 8, 6 of 4 bedden. Reserveer individueel of als groep één of meer bedden in een slaapzaal via de website van [Stay Okay Arnhem](https://www.stayokay.com/nl/hostel/arnhem) of door te bellen naar 026 44 20 114 onder vermelding van "Bruiloft Tonke en Jonathan". Slaapplek geregeld? Mooi. Dan wordt het tijd om dat aan het bruidspaar te laten weten. 
+Er zijn slaapzalen van 8, 6 of 4 bedden. Reserveer individueel of als groep één of meer bedden in een slaapzaal via de website van [Stay Okay Arnhem](https://www.stayokay.com/nl/hostel/arnhem) of door te bellen naar 026 44 20 114 _**onder vermelding van "Bruiloft Tonke en Jonathan"**_. Slaapplek geregeld? Mooi. Dan wordt het tijd om dat aan het bruidspaar te laten weten. 
 
 {{< figure src="/img/stayokay.jpg" width="800">}}
 
@@ -35,7 +38,7 @@ Blijf je slapen? Super leuk! Wij zouden het fijn vinden als je de auto bij de St
 ## Dress code
 
 De dress code voor ons feest is "cocktail".  
-Dus dames; trek je mooiste jurk aan en heren; suit-up!
+Dus dames; trek je mooiste jurk aan (lang, kort of iets wat er tussenin zit) en heren; suit-up! Maar trek vooral iets aan waarin je je comfortabel voelt. 
 
 {{< figure src="/img/dresscode.jpeg" width="800">}}
 
